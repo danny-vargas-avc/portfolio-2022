@@ -23,7 +23,7 @@ export default {
 </script>
 
 <template>
-	<div :class="appTheme" class="pt-0.5">
+	<div id="main" :class="appTheme" class="pt-0.5">
 		<!-- App header -->
 		<AppHeader />
 

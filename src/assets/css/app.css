@@ -19,6 +19,13 @@ body {
 
 /* Fonts */
 @font-face {
+	font-family: 'Library-3AM';
+	src: url('../fonts/library-3-am-font/Library3am-5V3Z.otf') format('woff2');
+	font-weight: 200 700;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'GeneralSans-Variable';
 	src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
 		url('../fonts/GeneralSans-Variable.woff') format('woff'),

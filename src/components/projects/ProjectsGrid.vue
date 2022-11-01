@@ -1,15 +1,15 @@
 <script>
 import feather from 'feather-icons';
-import ProjectsFilter from './ProjectsFilter.vue';
+// import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
 import projects from '../../data/projects';
 
 export default {
-	components: { ProjectSingle, ProjectsFilter },
+	components: { ProjectSingle },
 	data: () => {
 		return {
 			projects,
-			projectsHeading: 'Projects Portfolio',
+			projectsHeading: 'Projects',
 			selectedCategory: '',
 			searchProject: '',
 		};
@@ -61,7 +61,7 @@ export default {
 		</div>
 
 		<!-- Filter and search projects -->
-		<div class="mt-10 sm:mt-10">
+		<!-- <div class="mt-10 sm:mt-10">
 			<h3
 				class="font-general-regular
 					text-center text-secondary-dark
@@ -129,7 +129,7 @@ export default {
 				</div>
 				<ProjectsFilter @filter="selectedCategory = $event" />
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Projects grid -->
 		<div
