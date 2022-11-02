@@ -1,8 +1,10 @@
 <script>
 import feather from 'feather-icons';
+import ProjectGallery from './ProjectGallery.vue';
 
 export default {
-	props: ['projectInfo'],
+  components: { ProjectGallery },
+	props: ['projectInfo', 'projectImages'],
 
 	mounted() {
 		feather.replace();
@@ -74,7 +76,7 @@ export default {
 			</div>
 
 			<!-- Single project social sharing -->
-			<div>
+			<!-- <div>
 				<p
 					class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2"
 				>
@@ -94,23 +96,12 @@ export default {
 						></i
 					></a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<!-- Single project right section details -->
 		<div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-			<p
-				class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7"
-			>
-				{{ projectInfo.projectDetailsHeading }}
-			</p>
-			<p
-				v-for="projectDetail in projectInfo.projectDetails"
-				:key="projectDetail.id"
-				class="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
-			>
-				{{ projectDetail.details }}
-			</p>
+			<ProjectGallery :projectImages="projectImages" />
 		</div>
 	</div>
 </template>

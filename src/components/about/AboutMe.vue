@@ -1,17 +1,24 @@
 <script>
+import Contact from '@/views/Contact.vue';
 export default {
+	components: {
+		Contact,
+	},
 	setup() {
 		return {
 			bios: [
 				{
 					id: 1,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						`Currently based out of Brooklyn, NY. My passion for software development began in a small classroom at the University of Arizona where I took part in a virtual reality course.
+						Through that class, I was introduced to the world of programming, and for the next 2 years I spent teaching myself the basics and completing a full-time web development program.
+						I strive to tackle new concepts and projects in order to continue growing my skillset and allow me to be a reliable and trustworthy member of any team.`,
 				},
 				{
-					id: 2,
+					id: 1,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						`I am currently working full-time for Audio, Video & Controls (AV&C), where we tackle a number of creative installation projects around the country.
+						Our hybrid team of innovators empowers leading brands, architects, and artists to deliver site specific, software driven technology installations.`,
 				},
 			],
 		};
@@ -39,6 +46,7 @@ export default {
 			>
 				{{ bio.bio }}
 			</p>
+			<Contact />
 		</div>
 	</div>
 </template>

@@ -5,9 +5,9 @@ export default {
 </script>
 
 <template>
-	<div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
+	<div class="grid grid-cols-1 image">
 		<div
-			class="mb-10 sm:mb-0"
+			class="mb-10 sm:mb-10 image"
 			v-for="projectImage in projectImages"
 			:key="projectImage.id"
 		>
@@ -19,3 +19,5 @@ export default {
 		</div>
 	</div>
 </template>
+<style scoped>
+</style>

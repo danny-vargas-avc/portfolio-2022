@@ -78,7 +78,7 @@ export default {
 	<nav id="nav" class="sm:container sm:mx-auto">
 		<!-- Header start -->
 		<div
-			class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6">
+			class="z-10 block sm:flex w-screen justify-between items-center my-6">
 			<!-- Header menu links and small screen hamburger menu -->
 			<div class="flex justify-between items-center px-4 sm:px-0">
 				<!-- Header logos -->
@@ -90,7 +90,7 @@ export default {
 							class="w-36"
 							alt="Dark Logo"
 						/> -->
-						<h1 class="w-54 home-logo">Daniel Vargas</h1>
+						<h1 class="w-full home-logo">Daniel Vargas</h1>
 					</router-link>
 				</div>
 
@@ -178,5 +178,7 @@ export default {
 	font-size: 36px;
 	color: black;
 	background-color: white;
+	text-align: left;
+	widows: 50rem !important;
 }
 </style>

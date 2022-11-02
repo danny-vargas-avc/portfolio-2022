@@ -6,7 +6,7 @@ export default {
 
 <template>
 	<div class="w-full md:w-1/2">
-		<div class="text-left max-w-xl px-6">
+		<div class="text-left max-w-xl px-0">
 			<h2
 				class="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8"
 			>

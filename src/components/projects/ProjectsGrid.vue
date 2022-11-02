@@ -3,9 +3,22 @@ import feather from 'feather-icons';
 // import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
 import projects from '../../data/projects';
+import { useStore } from 'vuex';
 
 export default {
 	components: { ProjectSingle },
+	setup() {
+		const store = useStore();
+		function setProject(code) {
+			// console.log(code);
+			store.dispatch('setProject', code);
+		}
+
+		return {
+			setProject,
+			store,
+		}
+	},
 	data: () => {
 		return {
 			projects,
@@ -139,6 +152,7 @@ export default {
 				v-for="project in filteredProjects"
 				:key="project.id"
 				:project="project"
+				@click="setProject(project.code)"
 			/>
 		</div>
 	</section>

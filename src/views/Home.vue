@@ -13,15 +13,6 @@ export default {
 	},
 	setup() {
 		onMounted(() => {
-			// window.onload = () => {
-			// 	// eslint-disable-next-line
-			// 	Particles.init({
-			// 		selector: '#main-bg',
-			// 		maxParticles: 300,
-			// 		speed: 1,
-			// 		sizeVariations: 5,
-			// 	});				
-			// }
 			// eslint-disable-next-line
 			Particles.init({
 				selector: '#main-bg',

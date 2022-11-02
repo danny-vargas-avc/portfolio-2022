@@ -1,12 +1,24 @@
 <script>
+import { useStore } from 'vuex';
 export default {
 	props: ['project'],
+	setup() {
+		const store = useStore();
+		// function setProject(code) {
+		// 	store.dispatch('setProject', code);
+		// }
+
+		return {
+			// setProject,
+			store,
+		}
+	},
 };
 </script>
 
 <template>
 	<router-link
-		to="/projects/single-project"
+		:to="`/projects/${project.code}`"
 		class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
 		aria-label="Single Project"
 	>
@@ -14,7 +26,7 @@ export default {
 			<img
 				:src="project.img"
 				:alt="project.title"
-				class="rounded-t-xl border-none"
+				class="rounded-t-xl border-none image"
 			/>
 		</div>
 		<div class="text-center px-4 py-6">
@@ -31,4 +43,10 @@ export default {
 	</router-link>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+	.image {
+		width: 400px;
+		height: 400px;
+		object-fit: cover;
+	}
+</style>

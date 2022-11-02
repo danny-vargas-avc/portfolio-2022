@@ -32,9 +32,6 @@ export default {
 		</div>
 
 		<!-- About counter -->
-		<!-- <AboutCounter /> -->
-
-		<!-- About counter -->
 		<!-- <div class="container mx-auto">
 			<AboutClients />
 		</div> -->
