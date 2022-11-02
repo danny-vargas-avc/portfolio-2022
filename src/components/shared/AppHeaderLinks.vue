@@ -8,7 +8,7 @@ export default {
 	<!-- Header links -->
 	<div
 		:class="isOpen ? 'block' : 'hidden'"
-		class="m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none"
+		class="m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none layer"
 	>
 		<router-link
 			to="/projects"
@@ -31,15 +31,20 @@ export default {
 		<div
 			class="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 		>
-			<button
+			<!-- <button
 				class="font-general-medium sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-500"
 				@click="showModal()"
 				aria-label="Hire Me Button"
 			>
 				Hire Me
-			</button>
+			</button> -->
 		</div>
 	</div>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+	.layer {
+		z-index: 1;
+		background-color: white !important;
+	}
+</style>

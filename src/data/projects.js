@@ -4,19 +4,19 @@
 const projects = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
-		category: 'Web Application',
-		img: require('@/assets/images/web-project-2.jpg'),
+		title: 'David Geffen Hall',
+		category: 'Digital signage for the lobby area of Geffen Hall within the Lincoln Center.',
+		img: require('@/assets/images/dgh.jpg'),
 	},
 	{
 		id: 2,
-		title: 'Phoenix Digital Agency',
+		title: 'Camden Battlefield',
 		category: 'Mobile Application',
 		img: require('@/assets/images/mobile-project-2.jpg'),
 	},
 	{
 		id: 3,
-		title: 'Project Management UI',
+		title: 'San Francisco Symphony',
 		category: 'UI/UX Design',
 		img: require('@/assets/images/ui-project-1.jpg'),
 	},
