@@ -4,12 +4,8 @@ export default {
 	props: ['project'],
 	setup() {
 		const store = useStore();
-		// function setProject(code) {
-		// 	store.dispatch('setProject', code);
-		// }
 
 		return {
-			// setProject,
 			store,
 		}
 	},

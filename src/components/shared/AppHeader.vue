@@ -176,7 +176,7 @@ export default {
 .home-logo {
 	font-family: 'Library-3AM';
 	font-size: 36px;
-	color: black;
+	color: #0d2438;
 	background-color: white;
 	text-align: left;
 	widows: 50rem !important;

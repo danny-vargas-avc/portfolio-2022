@@ -121,18 +121,19 @@ export default {
       {
         id: 1,
         title: 'Kabul Project Management UI',
-        img: require('@/assets/images/ui-project-1.jpg'),
+        type: 'video/youtube',
+        img: require('@/assets/videos/sfs_1.mp4'),
       },
-      {
-        id: 2,
-        title: 'Kabul Project Management UI',
-        img: require('@/assets/images/web-project-2.jpg'),
-      },
-      {
-        id: 3,
-        title: 'Kabul Project Management UI',
-        img: require('@/assets/images/mobile-project-2.jpg'),
-      },
+      // {
+      //   id: 2,
+      //   title: 'Kabul Project Management UI',
+      //   img: require('@/assets/images/web-project-2.jpg'),
+      // },
+      // {
+      //   id: 3,
+      //   title: 'Kabul Project Management UI',
+      //   img: require('@/assets/images/mobile-project-2.jpg'),
+      // },
     ],
     projectInfo: {
       clientHeading: 'About Client',
@@ -241,18 +242,28 @@ export default {
     projectImages: [
       {
         id: 1,
-        title: 'Kabul Project Management UI',
-        img: require('@/assets/images/ui-project-1.jpg'),
-      },
+        title: 'Camden Image 1',
+        img: require('@/assets/videos/camden_video.mp4'),
+      },      
       {
         id: 2,
-        title: 'Kabul Project Management UI',
-        img: require('@/assets/images/web-project-2.jpg'),
+        title: 'Camden Image 2',
+        img: require('@/assets/images/camden.jpg'),
       },
       {
         id: 3,
-        title: 'Kabul Project Management UI',
-        img: require('@/assets/images/mobile-project-2.jpg'),
+        title: 'Camden Image 3',
+        img: require('@/assets/images/camden_2.jpg'),
+      },
+      {
+        id: 4,
+        title: 'Camden Image 4',
+        img: require('@/assets/images/camden_3.jpg'),
+      },
+      {
+        id: 5,
+        title: 'Camden Image 5',
+        img: require('@/assets/images/camden_4.jpg'),
       },
     ],
     projectInfo: {
@@ -261,27 +272,27 @@ export default {
         {
           id: 1,
           title: 'Name',
-          details: 'Company Ltd',
+          details: 'Revolutionary War Visitor Center at Camden',
         },
         {
           id: 2,
           title: 'Services',
-          details: 'UI Design & Frontend Development',
+          details: 'Visitor Center',
         },
         {
           id: 3,
           title: 'Website',
-          details: 'https://company.com',
+          details: 'https://simplyrevolutionary.com/',
         },
         {
           id: 4,
           title: 'Phone',
-          details: '555 8888 888',
+          details: '(803) 272-0076',
         },
       ],
       objectivesHeading: 'Objective',
       objectivesDetails:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+        'Interactive display in the visitor center at a Revolutionary War battlefield in South Carolina. Visitors use a rotary encoder to select an area on a physical map with LEDs lighting up to show the selected location while an attached 4k display will show information and images about the location. After they hit a button, the attached display will play a video about the selected location.',
       technologies: [
         {
           title: 'Tools & Technologies',
@@ -290,8 +301,8 @@ export default {
             'CSS',
             'JavaScript',
             'Vue.js',
-            'TailwindCSS',
-            'AdobeXD',
+            'Tornado',
+            'Electron',
           ],
         },
       ],

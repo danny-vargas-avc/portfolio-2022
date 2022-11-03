@@ -15,7 +15,7 @@ const particlesJSON = {
       }
     },
     "color": {
-      "value": "#000000"
+      "value": "#1e3851"
     },
     "shape": {
       "type": "circle",
