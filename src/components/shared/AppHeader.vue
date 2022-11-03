@@ -80,7 +80,7 @@ export default {
 		<div
 			class="z-10 block sm:flex w-screen justify-between items-center my-6">
 			<!-- Header menu links and small screen hamburger menu -->
-			<div class="flex justify-between items-center px-4 sm:px-0">
+			<div class="flex justify-between items-center px-4 sm:px-0 z-10">
 				<!-- Header logos -->
 				<div>
 					<router-link to="/">
@@ -180,5 +180,6 @@ export default {
 	background-color: white;
 	text-align: left;
 	widows: 50rem !important;
+	z-index: 1;
 }
 </style>

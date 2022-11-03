@@ -4,6 +4,103 @@ import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
 import Button from '../components/reusable/Button.vue';
 import { onMounted } from 'vue';
 
+const particlesJSON = {
+	"fps_limit": 30,
+  "particles": {
+    "number": {
+      "value": 700,
+      "density": {
+        "enable": true,
+        "value_area": 500
+      }
+    },
+    "color": {
+      "value": "#000000"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 200,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+};
+
 export default {
 	name: 'Home',
 	components: {
@@ -14,19 +111,14 @@ export default {
 	setup() {
 		onMounted(() => {
 			// eslint-disable-next-line
-			Particles.init({
-				selector: '#main-bg',
-				maxParticles: 300,
-				speed: 1,
-				sizeVariations: 5,
-			});	
+			particlesJS("main-bg", particlesJSON);	
 		});
 	}
 };
 </script>
 
 <template>
-	<canvas id="main-bg"></canvas>
+	<div id="main-bg"></div>
 	<div class="container mx-auto">
 		<!-- Banner -->
 		<!-- <AppBanner class="mb-5 sm:mb-8" /> -->
@@ -38,7 +130,7 @@ export default {
 		<div class="mt-10 sm:mt-20 flex justify-center">
 			<router-link
 				to="/projects"
-				class="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300"
+				class="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300 z-10"
 				aria-label="More Projects"
 			>
 				<Button title="More Projects" />
@@ -52,7 +144,7 @@ export default {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: -1;
+	z-index: 0;
 	width: 100%;
 	height: 100%;
 }

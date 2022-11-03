@@ -19,7 +19,7 @@ export default {
 <template>
 	<router-link
 		:to="`/projects/${project.code}`"
-		class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
+		class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark project-card"
 		aria-label="Single Project"
 	>
 		<div>
@@ -48,5 +48,8 @@ export default {
 		width: 400px;
 		height: 400px;
 		object-fit: cover;
+	}
+	.project-card {
+		z-index: 100 !important;
 	}
 </style>

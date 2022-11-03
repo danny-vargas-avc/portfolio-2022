@@ -9,13 +9,15 @@ export default {
 	},
 	setup() {
 		onMounted(() => {
-			// eslint-disable-next-line
-			Particles.init({
-				selector: '#main-bg',
-				maxParticles: 300,
-				speed: 1,
-				sizeVariations: 5,
-			});	
+			window.requestAnimationFrame(() => {
+				// eslint-disable-next-line
+				Particles.init({
+					selector: '#main-bg',
+					maxParticles: 300,
+					speed: 1,
+					sizeVariations: 5,
+				});				
+			});
 		});
 	}
 };

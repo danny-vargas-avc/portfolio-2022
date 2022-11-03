@@ -31,7 +31,7 @@ export default {
 </script>
 
 <template>
-	<div class="container mx-auto ">
+	<div class="container mx-auto">
 		<div
 			class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
 		>
@@ -44,7 +44,7 @@ export default {
 				>
 					Follow me
 				</p>
-				<ul class="flex gap-4 sm:gap-8">
+				<ul class="flex gap-4 sm:gap-8 z-10">
 					<a
 						v-for="social in socials"
 						:key="social.id"
