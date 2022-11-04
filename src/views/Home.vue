@@ -2,7 +2,7 @@
 // import AppBanner from '@/components/shared/AppBanner';
 import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
 import Button from '../components/reusable/Button.vue';
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 
 const particlesJSON = {
 	"fps_limit": 30,
@@ -109,16 +109,26 @@ export default {
 		Button,
 	},
 	setup() {
+    const windowWidth = ref(null);
 		onMounted(() => {
+      windowWidth.value = window.innerWidth;
+      window.addEventListener('resize', () => {
+        windowWidth.value = window.innerWidth;
+      });
+
 			// eslint-disable-next-line
 			particlesJS("main-bg", particlesJSON);	
 		});
+
+    return {
+      windowWidth,
+    }
 	}
 };
 </script>
 
 <template>
-	<div id="main-bg"></div>
+	<div id="main-bg" :style="windowWidth > 768 ? 'z-index: 0' : 'z-index: -1'"></div>
 	<div class="container mx-auto">
 		<!-- Banner -->
 		<!-- <AppBanner class="mb-5 sm:mb-8" /> -->

@@ -1,6 +1,6 @@
 <script>
 import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 
 
 const particlesJSON = {
@@ -106,7 +106,12 @@ export default {
 		ProjectsGrid,
 	},
 	setup() {
+		const windowWidth = ref(null);
 		onMounted(() => {
+      windowWidth.value = window.innerWidth;
+      window.addEventListener('resize', () => {
+        windowWidth.value = window.innerWidth;
+      });
 			// eslint-disable-next-line
 			particlesJS("main-bg", particlesJSON);
 		});
@@ -115,7 +120,7 @@ export default {
 </script>
 
 <template>
-	<div id="main-bg"></div>
+	<div id="main-bg" :style="windowWidth > 768 ? 'z-index: 0' : 'z-index: -1'"></div>
 	<div class="container mx-auto" style="position: relative;">
 		<ProjectsGrid />
 	</div>
