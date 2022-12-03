@@ -141,27 +141,27 @@ export default {
         {
           id: 1,
           title: 'Name',
-          details: 'Company Ltd',
+          details: 'San Francisco Symphony',
         },
         {
           id: 2,
           title: 'Services',
-          details: 'UI Design & Frontend Development',
+          details: 'Concert Hall',
         },
         {
           id: 3,
           title: 'Website',
-          details: 'https://company.com',
+          details: 'https://www.sfsymphony.org/',
         },
         {
           id: 4,
           title: 'Phone',
-          details: '555 8888 888',
+          details: '(415) 864-6000',
         },
       ],
       objectivesHeading: 'Objective',
       objectivesDetails:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+        'Installation for the façade and lobby of the San Francisco Symphony. The façade consists of multiple levels of programmable RGB strips and spot lights while the lobby is five dual-sided, movable totem screens.',
       technologies: [
         {
           title: 'Tools & Technologies',
@@ -170,8 +170,7 @@ export default {
             'CSS',
             'JavaScript',
             'Vue.js',
-            'TailwindCSS',
-            'AdobeXD',
+            'Django',
           ],
         },
       ],

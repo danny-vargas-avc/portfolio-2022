@@ -177,7 +177,7 @@ export default {
 	font-family: 'Library-3AM';
 	font-size: 36px;
 	color: #0d2438;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0);
 	text-align: left;
 	widows: 50rem !important;
 	z-index: 1;

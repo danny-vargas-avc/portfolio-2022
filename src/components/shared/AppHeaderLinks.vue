@@ -42,9 +42,9 @@ export default {
 	</div>
 </template>
 
-<style scoped>
+<style lang='postcss' scoped>
 	.layer {
 		z-index: 1;
-		background-color: white !important;
+		background-color: rgba(255, 255, 255, 0) !important;
 	}
 </style>
