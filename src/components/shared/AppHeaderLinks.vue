@@ -42,9 +42,16 @@ export default {
 	</div>
 </template>
 
-<style lang='postcss' scoped>
+<style scoped>
 	.layer {
 		z-index: 1;
 		background-color: rgba(255, 255, 255, 0) !important;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.layer {
+			background-color:#ffffff !important;
+			margin: 0;
+		}
 	}
 </style>
