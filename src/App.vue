@@ -1,12 +1,12 @@
 <script>
 import feather from 'feather-icons';
 import AppHeader from './components/shared/AppHeader';
-import AppFooter from './components/shared/AppFooter';
+// import AppFooter from './components/shared/AppFooter';
 
 export default {
 	components: {
 		AppHeader,
-		AppFooter,
+		// AppFooter,
 	},
 	data: () => {
 		return {
@@ -43,7 +43,7 @@ export default {
 		</back-to-top>
 
 		<!-- App footer -->
-		<AppFooter />
+		<!-- <AppFooter /> -->
 	</div>
 </template>
 

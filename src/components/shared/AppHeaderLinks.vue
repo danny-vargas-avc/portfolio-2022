@@ -12,13 +12,13 @@ export default {
 	>
 		<router-link
 			to="/projects"
-			class="font-general-medium block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-indigo-600 dark:hover:text-indigo-300  sm:mx-4 mb-2 sm:py-2 "
+			class="font-general-medium block text-left text-lg font-medium font-color hover:text-indigo-600 dark:hover:text-indigo-300  sm:mx-4 mb-2 sm:py-2 "
 			aria-label="Projects"
 			>Projects</router-link
 		>
 		<router-link
 			to="/about"
-			class="font-general-medium block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-indigo-600 dark:hover:text-indigo-300  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+			class="font-general-medium block text-left text-lg font-medium font-color hover:text-indigo-600 dark:hover:text-indigo-300  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 			aria-label="About Me"
 			>About Me</router-link
 		>
@@ -46,6 +46,10 @@ export default {
 	.layer {
 		z-index: 1;
 		background-color: rgba(255, 255, 255, 0) !important;
+	}
+
+	.font-color {
+		color: #8f8f8f;
 	}
 
 	@media only screen and (max-width: 768px) {

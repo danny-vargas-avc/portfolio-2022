@@ -1,11 +1,13 @@
 <script>
 import feather from 'feather-icons';
 // import ContactForm from '@/components/contact/ContactForm.vue';
+import AppFooter from '@/components/shared/AppFooter';
 import ContactDetails from '@/components/contact/ContactDetails.vue';
 
 export default {
 	components: {
 		// ContactForm,
+		AppFooter,
 		ContactDetails,
 	},
 	data: () => {
@@ -48,5 +50,8 @@ export default {
 
 		<!-- Contact details -->
 		<ContactDetails :contacts="contacts" />
+	<!-- App footer -->
+	<AppFooter />		
 	</div>
+
 </template>

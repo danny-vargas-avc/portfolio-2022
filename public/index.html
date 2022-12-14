@@ -24,110 +24,20 @@
 		<div id="app"></div>
 		<!-- built files will be auto injected -->
 		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CSSRulePlugin.min.js" integrity="sha512-2+BGFUqT8mzxE2ifxQK7kcEhOeHaO5EOrUgRIUJ9+HoIw8zQHI+HvnVrgGjwW0qL5dpGv8ao2oZlBS7IvvCuhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
-			const particlesJSON = {
-				"particles": {
-					"number": {
-						"value": 40,
-						"density": {
-							"enable": true,
-							"value_area": 500
-						}
-					},
-					"color": {
-						"value": "#fff"
-					},
-					"shape": {
-						"type": "polygon",
-						"stroke": {
-							"width": 3,
-							"color": "#001371"
-						},
-						"polygon": {
-							"nb_sides": 6
-						},
-						"image": {
-							"src": "https://previews.123rf.com/images/tmricons/tmricons1707/tmricons170700152/81206147-html-code-icon.jpg",
-							"width": 100,
-							"height": 100
-						}
-					},
-					"opacity": {
-						"value": 0.5,
-						"random": true
-					},
-					"size": {
-						"value": 10,
-						"random": true
-					},
-					"line_linked": {
-						"enable": false,
-						"distance": 200,
-						"color": "#001371",
-						"opacity": 0.3,
-						"width": 2
-					},
-					"move": {
-						"enable": true,
-						"speed": 5,
-						"direction": "bottom",
-						"random": true,
-						"straight": true,
-						"out_mode": "out",
-						"bounce": false,
-						"attract": {
-							"enable": false,
-							"rotateX": 600,
-							"rotateY": 1200
-						}
-					}
-				},
-				"interactivity": {
-					"detect_on": "canvas",
-					"events": {
-						"onhover": {
-							"enable": true,
-							"mode": [
-								"grab",
-								"bubble"
-							]
-						},
-						"onclick": {
-							"enable": true,
-							"mode": "push"
-						},
-						"resize": true
-					},
-					"modes": {
-						"grab": {
-							"distance": 400,
-							"line_linked": {
-								"opacity": 0.7
-							}
-						},
-						"bubble": {
-							"distance": 600,
-							"size": 12,
-							"duration": 1,
-							"opacity": 0.8,
-							"speed": 2
-						},
-						"repulse": {
-							"distance": 400,
-							"duration": 0.4
-						},
-						"push": {
-							"particles_nb": 20
-						},
-						"remove": {
-							"particles_nb": 10
-						}
-					}
-				},
-				"retina_detect": true
-			}
-	
-			// particlesJS.load("app", particlesJSON)
+			document.addEventListener('DOMContentLoaded', () => {
+				window.addEventListener('load', () => {
+					const content = CSSRulePlugin.getRule('.content:before');
+					const h1 = document.getElementById('title');
+					const p = document.getElementById('sub-title');
+					const tl = gsap.timeline();
+					tl.from(content, { delay: .5, duration: 4, cssRule: {scaleX: 0} });
+					tl.to(h1, { duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }, "-=3")
+					tl.to(p, { duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)' }, "-=2")	
+				}, false);
+			})
 		</script>
 	</body>
 </html>
