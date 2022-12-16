@@ -15,7 +15,7 @@ export default {
 <template>
 	<router-link
 		:to="`/projects/${project.code}`"
-		class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark project-card"
+		class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 project-card"
 		aria-label="Single Project"
 	>
 		<div>
@@ -27,12 +27,12 @@ export default {
 		</div>
 		<div class="text-center px-4 py-6">
 			<p
-				class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
+				class="font-general-semibold text-xl text-color font-semibold mb-2"
 			>
 				{{ project.title }}
 			</p>
 			<span
-				class="font-general-medium text-lg text-ternary-dark dark:text-ternary-light"
+				class="font-general-medium text-lg text-color"
 				>{{ project.category }}</span
 			>
 		</div>
@@ -40,12 +40,17 @@ export default {
 </template>
 
 <style scoped>
+
+.text-color {
+	color: #21282a !important;
+}
 	.image {
 		width: 400px;
 		height: 400px;
 		object-fit: cover;
 	}
 	.project-card {
+		background-color: #d3d3d3;
 		z-index: 100 !important;
 	}
 </style>

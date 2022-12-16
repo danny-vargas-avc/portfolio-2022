@@ -1,15 +1,13 @@
 <script>
 import AboutMe from '@/components/about/AboutMe';
-// import AboutCounter from '@/components/about/AboutCounter';
-// import AboutClients from '@/components/about/AboutClients';
+import AppFooter from '@/components/shared/AppFooter';
 import feather from 'feather-icons';
 
 export default {
 	name: 'About',
 	components: {
 		AboutMe,
-		// AboutCounter,
-		// AboutClients,
+		AppFooter,
 	},
 	data: () => {
 		return {};
@@ -30,12 +28,9 @@ export default {
 		<div class="container mx-auto">
 			<AboutMe />
 		</div>
-
-		<!-- About counter -->
-		<!-- <div class="container mx-auto">
-			<AboutClients />
-		</div> -->
 	</div>
+		<!-- App footer -->
+		<AppFooter />	
 </template>
 
 <style scoped></style>

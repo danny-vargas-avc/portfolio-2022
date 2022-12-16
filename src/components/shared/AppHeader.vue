@@ -94,13 +94,6 @@ export default {
 					</router-link>
 				</div>
 
-				<!-- Theme switcher small screen -->
-				<theme-switcher
-					:theme="theme"
-					@themeChanged="updateTheme"
-					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
-				/>
-
 				<!-- Small screen hamburger menu -->
 				<div class="sm:hidden">
 					<button

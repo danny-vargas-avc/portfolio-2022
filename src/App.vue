@@ -50,6 +50,8 @@ export default {
 <style>
 body {
 	overflow-x: hidden;
+	background-color: #21282a !important;
+	color: #d3d3d3;
 }
 #app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;

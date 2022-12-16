@@ -31,16 +31,16 @@ export default {
 </script>
 
 <template>
-	<div class="container mx-auto">
+	<div class="footer-container">
 		<div
-			class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
+			class="pt-10 sm:pt-30 pb-8 mt-20 border-t-2"
 		>
 			<!-- Footer social links -->
 			<div
 				class="flex flex-col justify-center items-center mb-12 sm:mb-20"
 			>
 				<p
-					class="font-general-semibold text-3xl sm:text-4xl font-semibold text-primary-dark dark:text-primary-light mb-5"
+					class="font-general-semibold text-3xl sm:text-4xl font-semibold mb-5"
 				>
 					Follow me
 				</p>
@@ -66,4 +66,9 @@ export default {
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.footer-container {
+	width: 80vw;
+	margin: 0 auto;
+}
+</style>

@@ -48,7 +48,7 @@ export default {
 </script>
 
 <template>
-	<div class="container mx-auto mt-10 sm:mt-20">
+	<div class="container mx-auto mt-10 sm:mt-20 pb-20">
 		<!-- Project header -->
 		<ProjectHeader :singleProjectHeader="PROJECTS[currentProject].singleProjectHeader" />
 

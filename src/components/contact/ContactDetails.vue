@@ -8,7 +8,7 @@ export default {
 	<div class="w-full md:w-1/2">
 		<div class="text-left max-w-xl px-0">
 			<h2
-				class="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8"
+				class="font-general-medium text-2xl mt-12 mb-8"
 			>
 				Contact details
 			</h2>
@@ -16,11 +16,11 @@ export default {
 				<li class="flex" v-for="contact in contacts" :key="contact.id">
 					<i
 						:data-feather="contact.icon"
-						class="w-5 text-gray-500 dark:text-gray-400 mr-4"
+						class="w-5 mr-4"
 					></i>
 					<a
 						href="#"
-						class="text-lg mb-4 text-ternary-dark dark:text-ternary-light"
+						class="text-lg mb-4"
 						:class="
 							contact.icon === 'mail' || contact.icon === 'phone'
 								? 'hover:underline cursor-pointer'
@@ -36,4 +36,5 @@ export default {
 	</div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="postcss" scoped>
+</style>

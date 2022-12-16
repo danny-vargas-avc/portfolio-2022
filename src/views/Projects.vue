@@ -54,7 +54,7 @@ const particlesJSON = {
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#000000",
+      "color": "#d3d3d3",
       "opacity": 0.4,
       "width": 1
     },
@@ -149,5 +149,6 @@ export default {
 	z-index: 0;
 	width: 100%;
 	height: 100%;
+  background-color: #21282a;
 }
 </style>

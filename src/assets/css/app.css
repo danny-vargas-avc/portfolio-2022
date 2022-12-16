@@ -221,9 +221,22 @@ body {
 	font-family: 'GeneralSans-BoldItalic';
 }
 
+a, p, span, svg, div {
+	color: #d3d3d3 !important;
+}
+
+.font-color {
+	color: #6f81cb;
+}
+
+a:hover, svg.feather:hover {
+	color: #6f81cb !important;
+}
+
 /* Active class for navigation menu */
 .router-link-active,
 .router-link-exact-active {
-	@apply text-indigo-800;
-	@apply text-indigo-600 dark:text-indigo-300;
+	@apply font-color;
 }
+
+/* tailwind overrides */
