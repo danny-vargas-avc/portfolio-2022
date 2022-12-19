@@ -37,7 +37,7 @@ export default {
 		>
 			<!-- Footer social links -->
 			<div
-				class="flex flex-col justify-center items-center mb-12 sm:mb-20"
+				class="flex flex-col justify-center items-center mb-5 sm:mb-5"
 			>
 				<p
 					class="font-general-semibold text-3xl sm:text-4xl font-semibold mb-5"
@@ -50,7 +50,7 @@ export default {
 						:key="social.id"
 						:href="social.url"
 						target="__blank"
-						class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-500"
+						class="cursor-pointer rounded-lg bg-gray-50 shadow-sm p-4 duration-500 icon-color"
 					>
 						<i
 							:data-feather="social.icon"
@@ -70,5 +70,9 @@ export default {
 .footer-container {
 	width: 80vw;
 	margin: 0 auto;
+}
+
+.icon-color {
+	background-color: #21282a !important;
 }
 </style>
